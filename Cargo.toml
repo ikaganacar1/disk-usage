@@ -11,3 +11,18 @@ sysinfo = "0.30"
 clap = { version = "4.5", features = ["derive", "cargo"] }
 colored = "2.1"
 anyhow = "1.0"
+
+[package.metadata.deb]
+maintainer = "İsmail Kağan Acar acarismailkagan@gmail.com"
+copyright = "2026, İsmail Kağan Acar acarismailkagan@gmail.com"
+license-file = ["LICENSE", "4"]
+extended-description = """A disk usage visualization tool with better output than df -h.
+Features colorful progress bars, smart filtering, and flexible sorting options."""
+depends = "$auto"
+section = "utils"
+priority = "optional"
+assets = [
+    ["target/release/disk-usage", "usr/bin/", "755"],
+    ["README.md", "usr/share/doc/disk-usage/README", "644"],
+    ["LICENSE", "usr/share/doc/disk-usage/LICENSE", "644"],
+]
