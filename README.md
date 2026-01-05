@@ -107,4 +107,4 @@ Total: 2.24 TB size, 936.71 GB used, 1.32 TB available
 
 ## License
 
-MIT OR Apache-2.0
+MIT
